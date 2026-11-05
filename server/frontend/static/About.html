@@ -1,68 +1,97 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - DriveSync Dealerships</title>
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="/static/style.css">
 </head>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-    <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
-      </div>
+<body>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">DriveSync Dealerships</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+    <!-- Main Content Container -->
+    <div class="container my-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold">About DriveSync Dealerships</h1>
+            <p class="lead text-muted mt-3">
+                DriveSync Dealerships is your premier destination for finding, comparing, and purchasing top-quality new and pre-owned vehicles. Founded with a vision to revolutionize the car-buying experience, we connect customers with trusted local dealerships, transparent vehicle histories, seamless financing options, and expert maintenance services. Whether you are looking for an eco-friendly sedan, a rugged family SUV, or a high-performance sports car, DriveSync ensures a hassle-free, customer-first journey from your first online search to driving off the lot.
+            </p>
         </div>
-      </div>
-    </div>
-    </div>
-    </div>
-    
-</div>
 
+        <hr class="my-5">
+
+        <h2 class="text-center mb-4">Meet Our Executive Team</h2>
+        
+        <!-- Team Members Row -->
+        <div class="row text-center">
+            <!-- Team Member 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" class="card-img-top rounded-circle mx-auto mt-4" style="width: 150px; height: 150px; object-fit: cover;" alt="Sophia Martinez">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Sophia Martinez</h5>
+                        <h6 class="text-muted">Chief Executive Officer (CEO)</h6>
+                        <p class="card-text mt-3">Sophia has over 15 years of leadership experience in automotive retail and digital marketplace strategy, guiding DriveSync toward nationwide expansion.</p>
+                        <a href="mailto:sophia.martinez@drivesync.com" class="btn btn-outline-dark btn-sm mt-2">sophia.martinez@drivesync.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" class="card-img-top rounded-circle mx-auto mt-4" style="width: 150px; height: 150px; object-fit: cover;" alt="Liam Johnson">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Liam Johnson</h5>
+                        <h6 class="text-muted">Chief Technology Officer (CTO)</h6>
+                        <p class="card-text mt-3">Liam oversees our robust Django backend architecture, cloud infrastructure pipelines, and user experience analytics to keep the platform fast and secure.</p>
+                        <a href="mailto:liam.johnson@drivesync.com" class="btn btn-outline-dark btn-sm mt-2">liam.johnson@drivesync.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" class="card-img-top rounded-circle mx-auto mt-4" style="width: 150px; height: 150px; object-fit: cover;" alt="Aisha Patel">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Aisha Patel</h5>
+                        <h6 class="text-muted">Head of Customer Relations</h6>
+                        <p class="card-text mt-3">Aisha leads dealer partnerships and user review management systems, ensuring transparent ratings, user feedback moderation, and high consumer trust.</p>
+                        <a href="mailto:aisha.patel@drivesync.com" class="btn btn-outline-dark btn-sm mt-2">aisha.patel@drivesync.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 DriveSync Dealerships. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
